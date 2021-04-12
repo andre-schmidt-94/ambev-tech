@@ -1,0 +1,17 @@
+{
+  "name": "ambev-tech",
+  "version": "1.0.0",
+  "description": "tecnical challenge for ambev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "André Schmidt Ribeiro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "graph-data-structure": "^1.13.0",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
+  }
+}

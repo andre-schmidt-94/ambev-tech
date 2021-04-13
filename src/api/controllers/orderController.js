@@ -9,7 +9,7 @@ class OrderController {
         if(await Order.exists({store: req.body.store, location: req.body.location, quantity: req.body.quantity})){
             logger.warn("Order exists");
 
-            res.status(409).json('Conflict! Order already exists');
+            res.status(409).json({message: 'Conflict! Order already exists', order: req.body});
         } else{
             logger.info("New Order");
 

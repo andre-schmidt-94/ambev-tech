@@ -8,7 +8,7 @@ class VehicleController {
         if(await Vehicle.exists({model: req.body.model, type: req.body.type, location: req.body.location})){
             logger.warn("Vehicle exists");
 
-            res.status(409).json('Conflict! Vehicle already exists');
+            res.status(409).json({message: 'Conflict! Vehicle already exists', vehicle: req.body});
         } else{
             logger.info("New Vehicle");
 

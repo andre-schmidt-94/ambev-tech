@@ -1,12 +1,15 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const logger = require('./src/api/services/logger')
+const express = require('express');
+const mongoose = require('mongoose');
+const logger = require('./src/api/services/logger');
+const vehicleRouter = require('./src/api/routes/vehicleRoute');
+const apiErrorHandler = require('./src/api/controllers/apiErrorHandler');
 
+require('dotenv').config();
+const app = express();
 
-require('dotenv').config()
-const app = express()
-
-app.use(express.json())
+app.use(express.json());
+app.use('/', vehicleRouter);
+app.use(apiErrorHandler);
 
 // Connect to DB
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true, serverSelectionTimeoutMS: 5000 }, () => {
@@ -14,4 +17,4 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedT
 });
 
 // Start
-app.listen(9000);
+app.listen(9000, () => logger.info('Server running on port 9000'));

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const logger = require('./src/api/services/logger');
 const vehicleRouter = require('./src/api/routes/vehicleRoute');
 const orderRouter = require('./src/api/routes/orderRoute');
-const apiErrorHandler = require('./src/api/controllers/apiErrorHandler');
+const apiErrorHandler = require('./src/api/middlewares/apiErrorHandler');
 
 require('dotenv').config();
 const app = express();

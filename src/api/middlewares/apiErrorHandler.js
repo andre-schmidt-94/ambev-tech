@@ -1,4 +1,4 @@
-const ApiError = require('./apiErrorController');
+const ApiError = require('../controllers/apiErrorController');
 const logger = require('../services/logger');
 
 function apiErrorHandler(err, req, res, next) {

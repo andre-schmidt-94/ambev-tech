@@ -1,0 +1,11 @@
+version: '2'
+services:
+    app:
+        build: .
+        ports:
+            - "9000:9000"
+        tty: true
+        depends_on: 
+            - mongodb
+    mongodb:
+        image: mongo:3.6.12

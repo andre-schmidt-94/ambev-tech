@@ -1,7 +1,7 @@
 const express = require('express');
 const vehicleController = require('../controllers/vehicleController');
 const validateDto = require('../middlewares/validateDto');
-const vehicleDto = require('../dtos/vehicle');
+const vehicleDto = require('../validations/vehicle');
 
 const vehicleRouter = express.Router();
 

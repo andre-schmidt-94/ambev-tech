@@ -12,5 +12,4 @@ function validateDto(schema) {
     }
 }
 
-
-module.exports = validateDto;
+module.exports = validateDto

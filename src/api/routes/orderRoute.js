@@ -7,6 +7,10 @@ const orderRouter = express.Router();
 
 orderRouter.get('/orders', orderController.getOrders);
 
+orderRouter.get('/ordersTest', (req, res) => {
+    res.send({store: 'chama ele'});
+});
+
 orderRouter.post('/v1/order', validateDto(orderDto), orderController.createOrder);
 
 module.exports = orderRouter;

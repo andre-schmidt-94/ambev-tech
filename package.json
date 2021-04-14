@@ -4,19 +4,22 @@
   "description": "tecnical challenge for ambev",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "test": "jest --testEnvironment=node",
+    "start": "nodemon server.js"
   },
   "author": "André Schmidt Ribeiro",
   "license": "ISC",
   "dependencies": {
+    "@shelf/jest-mongodb": "^1.2.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graph-data-structure": "^1.13.0",
+    "jest": "^26.6.3",
     "mongoose": "^5.12.3",
     "nodemon": "^2.0.7",
     "pino": "^6.11.2",
     "pino-pretty": "^4.7.1",
+    "supertest": "^6.1.3",
     "yup": "^0.32.9"
   }
 }

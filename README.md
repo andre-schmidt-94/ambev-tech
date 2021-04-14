@@ -17,7 +17,7 @@ To get the app ready for use, simply download or clone this repository. From the
 ```html
  docker build -t ambevs .
 ```
-Once the docker finished building, you are ready to run it by using the command
+Once the docker finish building, you are ready to run it by using the command
 ```html
  docker-compose up
 ```
@@ -63,11 +63,11 @@ Body:
 
  + GET the ranking of each vehicle, using an specific order
  
-Once you have at least one Order and one Vehicle, you can use the following GET method
+Once you have at least one Order and one Vehicle, you can use the following GET method to Rank all the vehicles.
 
 ```GET http://localhost:9000/v1/order/<orderId>/vehicle/ranking```
 
-to Rank all the vehicles. Note that **orderId** refers to the id of the order you want!
+Note that **orderId** refers to the id of the order you want!
 The response should look like
 ```json
 [
@@ -91,6 +91,6 @@ The response should look like
         "score": 100,
         "__v": 0
     },
-    ....
+    ...
 ]
 ```

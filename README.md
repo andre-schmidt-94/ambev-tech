@@ -1,7 +1,7 @@
 # Ambev Tech Challenge
 
 ### Description
-This project is a solution for beverage delivery. It determine which vehicle is the best option to deliver beer. Due to the different necessities and distances(different distribution centers), the application determines the best vehicle suited for the job.
+This project is a solution for beverage delivery. It determines which vehicle is the best option to deliver beer. Due to the different necessities and distances (different distribution centers), the application determines the best vehicle suited for the job.
 
 ### Features
 * Add Order
@@ -67,7 +67,7 @@ Once you have at least one Order and one Vehicle, you can use the following GET 
 ```GET http://localhost:9000/v1/order/<orderId>/vehicle/ranking```
 
 Note that **orderId** refers to the id of the order you want!
-The response should look like
+The response should look like:
 ```json
 [
     {

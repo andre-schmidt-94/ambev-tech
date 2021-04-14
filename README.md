@@ -11,17 +11,17 @@ This project is a solution for beverage delivery. It determine which vehicle is 
 * List vehicles rankings for that specific order.
 
 ### How to Install and Start
-To get the app ready for use, simply download or clone this repository. From there you can open the terminal and run the following command line
+To get the app ready for use, simply download or clone this repository. From there you can open the terminal and run the following command line:
 
 ```html
  docker build -t ambevs .
 ```
-Once the docker finish building, you are ready to run it by using the command
+Once the docker finish building, you are ready to run it by using the command:
 ```html
  docker-compose up
 ```
 This will start MongoDB and the application.
-Once the application is running, you should see something like this
+Once the application is running, you should see something like this:
 
 ![appRunning](https://user-images.githubusercontent.com/20649713/114636880-719fdc80-9c9e-11eb-87f6-db825a7ac2f5.png)
 

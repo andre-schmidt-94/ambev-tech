@@ -10,6 +10,9 @@ This project is a solution for beverage delivery. It determines which vehicle is
 * List Vehicles
 * List vehicles rankings for that specific order.
 
+### Requirements
+* Docker
+
 ### How to Install and Start
 To get the app ready for use, simply download or clone this repository. From there you can open the terminal and run the following command line:
 

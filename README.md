@@ -1,7 +1,7 @@
 # Ambev Tech Challenge
 
 ### Description
-This project is a solution for beverage delivery. It determines which vehicle is the best option to deliver beer. Due to the different necessities and distances (different distribution centers), the application determines the best vehicle suited for the job.
+This project is a solution for beverage delivery. It determines which vehicle is the best option to deliver beer based on where the order is, how much boxes of beer are ordered, where the vehicle is and how much beer it can carry.
 
 ### Features
 * Add Order
